@@ -30,22 +30,25 @@ const videos = [
 
 export default function Home() {
   return (
-    <main className="min-h-svh overflow-x-hidden bg-black text-white">
+    <main className="min-h-svh overflow-x-hidden bg-yellow-200">
       {/* Hero */}
       <section className="mx-auto flex min-h-svh w-full max-w-7xl flex-col items-center justify-center gap-10 px-5 py-16 sm:px-8 md:px-12 lg:flex-row lg:justify-between lg:px-16">
         <div className="w-full text-center lg:w-1/2 lg:text-left">
-          <h1 className="text-balance text-[clamp(2.5rem,11vw,4.5rem)] font-light leading-[0.95] tracking-tight text-white">
-            Ariadna Maria Dragoi
+          <h1 className="text-balance text-[clamp(2.5rem,11vw,4.5rem)] font-bold leading-[0.95] tracking-tight text-orange-500">
+            Ariadna-Maria
+          </h1>
+          <h1 className="text-balance text-[clamp(2.5rem,11vw,4.5rem)] font-bold leading-[0.95] tracking-tight text-orange-500">
+            Dragoi
           </h1>
 
-          <span className="mt-4 block text-2xl font-light text-gray-400 sm:text-3xl">
+          <span className="mt-4 block text-2xl text-pink-700 sm:text-3xl">
             Video Editor
           </span>
 
           <div className="mt-6 flex items-center justify-center gap-4 lg:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-white"
+              className="h-6 w-6 text-fuchsia-900"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -56,7 +59,7 @@ export default function Home() {
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-white"
+              className="h-6 w-6 text-fuchsia-900"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -81,11 +84,11 @@ export default function Home() {
       {/* About */}
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
         <div className="max-w-4xl">
-          <h2 className="mb-4 text-3xl font-light text-white sm:text-4xl">
+          <h2 className="mb-4 text-3xl font-bold sm:text-4xl text-orange-500">
             About me
           </h2>
 
-          <p className="text-base font-light leading-relaxed text-gray-400 sm:text-lg">
+          <p className="text-base leading-relaxed text-pink-700 sm:text-lg">
             I'm a video editor and creative technologist who loves crafting visual
             stories. I work across editing, motion design, and interactive
             experiences, blending technical skill with a strong sense of
@@ -97,8 +100,8 @@ export default function Home() {
 
       {/* Work */}
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
-        <h2 className="mb-8 text-3xl font-light text-white sm:text-4xl">
-          My Work
+        <h2 className="mb-8 text-3xl font-bold text-orange-500 sm:text-4xl">
+          My work
         </h2>
 
         <Carousel
@@ -120,15 +123,15 @@ export default function Home() {
       >
         <VideoFrame video={video} />
 
-        <p className="mt-3 text-sm font-light leading-relaxed text-gray-400">
+        <p className="mt-3 text-sm font-light leading-relaxed text-pink-700">
           {video.title}
         </p>
       </CarouselItem>
     ))}
   </CarouselContent>
 
-  <CarouselPrevious className="left-1 z-30 border-white/20 bg-black/70 text-white hover:bg-black sm:left-0 md:-left-5" />
-  <CarouselNext className="right-1 z-30 border-white/20 bg-black/70 text-white hover:bg-black sm:right-0 md:-right-5" />
+  <CarouselPrevious className="left-1 z-30 border-white/20 bg-fuchsia-900 text-white hover:bg-fuchsia-900 hover:text-white sm:left-0 md:-left-5" />
+  <CarouselNext className="right-1 z-30 border-white/20 bg-fuchsia-900 text-white hover:bg-fuchsia-900 hover:text-white sm:right-0 md:-right-5" />
 </Carousel>
       </section>
     </main>
