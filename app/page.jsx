@@ -53,7 +53,9 @@ const photographyCategories = [
 
 export default function Home() {
   return (
-    <main className={`${ibmPlexSerif.className} min-h-svh overflow-x-hidden bg-emerald-800`}>
+    <main
+      className={`${ibmPlexSerif.className} min-h-svh overflow-x-hidden bg-emerald-800`}
+    >
       {/* Hero */}
       <section className="mx-auto flex min-h-svh w-full max-w-7xl flex-col items-center justify-center gap-10 px-5 py-16 sm:px-8 md:px-12 lg:flex-row lg:justify-between lg:px-16">
         <div className="w-full text-center lg:w-1/2 lg:text-left">
@@ -69,26 +71,39 @@ export default function Home() {
           </span>
 
           <div className="mt-6 flex items-center justify-center gap-4 lg:justify-start">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-pink-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=ariadna.dragoi10@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Send email"
+              className="inline-flex"
             >
-              <path d="m19.94 7.68-.03-.09a.8.8 0 0 0-.2-.29l-5-5c-.09-.09-.19-.15-.29-.2l-.09-.03a.8.8 0 0 0-.26-.05c-.02 0-.04-.01-.06-.01H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-12s-.01-.04-.01-.06c0-.09-.02-.17-.05-.26ZM6 20V4h7v4c0 .55.45 1 1 1h4v11z" />
-              <path d="M8 11h8v2H8zm0 4h8v2H8zm0-8h3v2H8z" />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-pink-500 transition-transform duration-200 hover:scale-110"
+                fill="currentColor"
+                viewBox="0 0 50 50"
+              >
+                <path d="M12 23.403V23.39 10.389L11.88 10.3h-.01L9.14 8.28C7.47 7.04 5.09 7.1 3.61 8.56 2.62 9.54 2 10.9 2 12.41v3.602L12 23.403zM38 23.39v.013l10-7.391V12.41c0-1.49-.6-2.85-1.58-3.83-1.46-1.457-3.765-1.628-5.424-.403L38.12 10.3 38 10.389V23.39zM14 24.868l10.406 7.692c.353.261.836.261 1.189 0L36 24.868V11.867L25 20l-11-8.133V24.868zM38 25.889V41c0 .552.448 1 1 1h6.5c1.381 0 2.5-1.119 2.5-2.5V18.497L38 25.889zM12 25.889L2 18.497V39.5C2 40.881 3.119 42 4.5 42H11c.552 0 1-.448 1-1V25.889z" />
+              </svg>
+            </a>
 
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-pink-500"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden="true"
+            <a
+              href="https://www.instagram.com/barcelona_in_blue/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Instagram profile"
+              className="inline-flex"
             >
-              <path d="M4.983 2.821a2.188 2.188 0 1 0 0 4.376 2.188 2.188 0 1 0 0-4.376M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66zm-6.142 0H6.87v12.139H3.095z" />
-            </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6 text-pink-500 transition-transform duration-200 hover:scale-110"
+                fill="currentColor"
+                viewBox="0 0 50 50"
+              >
+                <path d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z" />
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -108,8 +123,8 @@ export default function Home() {
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
         <div className="max-w-4xl">
           <h2 className="mb-4 text-3xl font-bold text-white sm:text-5xl">
-  About me
-</h2>
+            About me
+          </h2>
 
           <p className="text-lg leading-relaxed text-white sm:text-md">
             I'm a video editor and creative technologist who loves crafting
@@ -124,12 +139,12 @@ export default function Home() {
       {/* Work */}
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
         <h2 className="mb-8 text-3xl font-bold text-white sm:text-5xl">
-  My work
-</h2>
+          My work
+        </h2>
 
         <h3 className="mb-6 text-xl font-bold text-white sm:text-3xl">
-  Video Projects
-</h3>
+          Video Projects
+        </h3>
 
         <div className="clean-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4 [-webkit-overflow-scrolling:touch] sm:gap-6">
           {videos.map((video, index) => (
