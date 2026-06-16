@@ -14,13 +14,13 @@ const images = [
 
 export default function BehindTheScenesPage() {
   return (
-    <main className="min-h-svh bg-yellow-200 px-5 py-16 sm:px-8 md:px-12 lg:px-16">
+    <main className="min-h-svh bg-emerald-800 px-5 py-16 sm:px-8 md:px-12 lg:px-16">
       <section className="mx-auto w-full max-w-7xl">
-        <h1 className="text-4xl font-bold text-orange-500 sm:text-6xl">
+        <h1 className="text-4xl font-bold text-white sm:text-6xl">
           Behind the Scenes
         </h1>
 
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-pink-700 sm:text-lg">
+        <p className="mt-4 max-w-2xl text-base leading-relaxed text-white sm:text-lg">
           Photography projects in the Behind the Scenes category.
         </p>
 
@@ -30,7 +30,7 @@ export default function BehindTheScenesPage() {
               <PhotoView key={index} src={item}>
                 <button
                   type="button"
-                  className="group aspect-[4/5] w-full overflow-hidden rounded-2xl bg-fuchsia-900"
+                  className="group aspect-[4/5] w-full overflow-hidden rounded-2xl bg-white"
                 >
                   <img
                     src={item}

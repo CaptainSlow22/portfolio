@@ -47,25 +47,25 @@ const photographyCategories = [
 
 export default function Home() {
   return (
-    <main className="min-h-svh overflow-x-hidden bg-yellow-200">
+    <main className="min-h-svh overflow-x-hidden bg-emerald-800">
       {/* Hero */}
       <section className="mx-auto flex min-h-svh w-full max-w-7xl flex-col items-center justify-center gap-10 px-5 py-16 sm:px-8 md:px-12 lg:flex-row lg:justify-between lg:px-16">
         <div className="w-full text-center lg:w-1/2 lg:text-left">
-          <h1 className="text-balance text-[clamp(2.5rem,11vw,4.5rem)] font-bold leading-[0.95] tracking-tight text-orange-500">
+          <h1 className="text-balance text-[clamp(2.5rem,11vw,4.5rem)] font-bold leading-[0.95] tracking-tight text-white">
             Ariadna-Maria
           </h1>
-          <h1 className="text-balance text-[clamp(2.5rem,11vw,4.5rem)] font-bold leading-[0.95] tracking-tight text-orange-500">
+          <h1 className="text-balance text-[clamp(2.5rem,11vw,4.5rem)] font-bold leading-[0.95] tracking-tight text-white">
             Drăgoi
           </h1>
 
-          <span className="mt-4 block text-2xl text-pink-700 sm:text-3xl">
+          <span className="mt-4 block text-2xl text-white sm:text-3xl">
             Video Editor
           </span>
 
           <div className="mt-6 flex items-center justify-center gap-4 lg:justify-start">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-fuchsia-900"
+              className="h-6 w-6 text-pink-500"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -76,7 +76,7 @@ export default function Home() {
 
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-fuchsia-900"
+              className="h-6 w-6 text-pink-500"
               fill="currentColor"
               viewBox="0 0 24 24"
               aria-hidden="true"
@@ -101,11 +101,11 @@ export default function Home() {
       {/* About */}
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
         <div className="max-w-4xl">
-          <h2 className="mb-4 text-3xl font-bold sm:text-4xl text-orange-500">
+          <h2 className="mb-4 text-4xl font-bold sm:text-3xl text-white">
             About me
           </h2>
 
-          <p className="text-base leading-relaxed text-pink-700 sm:text-lg">
+          <p className="text-base leading-relaxed text-white sm:text-md">
             I'm a video editor and creative technologist who loves crafting
             visual stories. I work across editing, motion design, and
             interactive experiences, blending technical skill with a strong
@@ -117,11 +117,11 @@ export default function Home() {
 
       {/* Work */}
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
-        <h2 className="mb-8 text-3xl font-bold text-orange-500 sm:text-4xl">
+        <h2 className="mb-8 text-4xl font-bold text-white sm:text-3xl">
           My work
         </h2>
 
-        <h3 className="mb-6 text-xl font-bold text-orange-500 sm:text-3xl">
+        <h3 className="mb-6 text-xl font-bold text-white sm:text-xl">
           Video Projects
         </h3>
 
@@ -145,7 +145,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="mt-3 text-sm font-light leading-relaxed text-pink-700">
+              <p className="mt-3 text-sm font-light leading-relaxed text-white">
                 {video.title}
               </p>
             </article>
@@ -153,7 +153,7 @@ export default function Home() {
         </div>
 
         <div className="mt-16">
-          <h3 className="mb-6 text-xl font-bold text-orange-500 sm:text-3xl">
+          <h3 className="mb-6 text-xl font-bold text-white sm:text-xl">
             Photography Projects
           </h3>
 

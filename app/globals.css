@@ -135,7 +135,7 @@ body {
 
 .clean-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: #701a75 transparent;
+  scrollbar-color: #EC4899 transparent;
 }
 
 .clean-scrollbar::-webkit-scrollbar {
@@ -147,10 +147,10 @@ body {
 }
 
 .clean-scrollbar::-webkit-scrollbar-thumb {
-  background: #701a75;
+  background: #EC4899;
   border-radius: 9999px;
 }
 
 .clean-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #86198f;
+  background: #DB2777;
 }
