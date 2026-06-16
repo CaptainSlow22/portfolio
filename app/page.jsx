@@ -2,6 +2,12 @@
 import * as React from "react";
 import "react-photo-view/dist/react-photo-view.css";
 import Link from "next/link";
+import { IBM_Plex_Serif } from "next/font/google";
+
+const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 const videos = [
   {
@@ -47,7 +53,7 @@ const photographyCategories = [
 
 export default function Home() {
   return (
-    <main className="min-h-svh overflow-x-hidden bg-emerald-800">
+    <main className={`${ibmPlexSerif.className} min-h-svh overflow-x-hidden bg-emerald-800`}>
       {/* Hero */}
       <section className="mx-auto flex min-h-svh w-full max-w-7xl flex-col items-center justify-center gap-10 px-5 py-16 sm:px-8 md:px-12 lg:flex-row lg:justify-between lg:px-16">
         <div className="w-full text-center lg:w-1/2 lg:text-left">

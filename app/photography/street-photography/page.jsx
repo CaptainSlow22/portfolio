@@ -2,6 +2,13 @@
 
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import { IBM_Plex_Serif } from "next/font/google";
+
+const ibmPlexSerif = IBM_Plex_Serif({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
 
 const images = [
   'https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1200&auto=format&fit=crop',
@@ -14,7 +21,7 @@ const images = [
 
 export default function StreetPhotographyPage() {
   return (
-    <main className="min-h-svh bg-emerald-800 px-5 py-16 sm:px-8 md:px-12 lg:px-16">
+    <main className={`${ibmPlexSerif.className} min-h-svh bg-emerald-800 px-5 py-16 sm:px-8 md:px-12 lg:px-16`}>
       <section className="mx-auto w-full max-w-7xl">
         <h1 className="text-4xl font-bold text-white sm:text-6xl">
           Street Photography
