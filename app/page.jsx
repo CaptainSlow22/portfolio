@@ -107,11 +107,11 @@ export default function Home() {
       {/* About */}
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
         <div className="max-w-4xl">
-          <h2 className="mb-4 text-4xl font-bold sm:text-3xl text-white">
-            About me
-          </h2>
+          <h2 className="mb-4 text-3xl font-bold text-white sm:text-5xl">
+  About me
+</h2>
 
-          <p className="text-base leading-relaxed text-white sm:text-md">
+          <p className="text-lg leading-relaxed text-white sm:text-md">
             I'm a video editor and creative technologist who loves crafting
             visual stories. I work across editing, motion design, and
             interactive experiences, blending technical skill with a strong
@@ -123,13 +123,13 @@ export default function Home() {
 
       {/* Work */}
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
-        <h2 className="mb-8 text-4xl font-bold text-white sm:text-3xl">
-          My work
-        </h2>
+        <h2 className="mb-8 text-3xl font-bold text-white sm:text-5xl">
+  My work
+</h2>
 
-        <h3 className="mb-6 text-xl font-bold text-white sm:text-xl">
-          Video Projects
-        </h3>
+        <h3 className="mb-6 text-xl font-bold text-white sm:text-3xl">
+  Video Projects
+</h3>
 
         <div className="clean-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4 [-webkit-overflow-scrolling:touch] sm:gap-6">
           {videos.map((video, index) => (
@@ -159,7 +159,7 @@ export default function Home() {
         </div>
 
         <div className="mt-16">
-          <h3 className="mb-6 text-xl font-bold text-white sm:text-xl">
+          <h3 className="mb-6 text-xl font-bold text-white sm:text-3xl">
             Photography Projects
           </h3>
 
