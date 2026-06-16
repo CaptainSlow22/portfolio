@@ -132,3 +132,25 @@ body {
     @apply font-sans;
   }
 }
+
+.clean-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #701a75 transparent;
+}
+
+.clean-scrollbar::-webkit-scrollbar {
+  height: 8px;
+}
+
+.clean-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.clean-scrollbar::-webkit-scrollbar-thumb {
+  background: #701a75;
+  border-radius: 9999px;
+}
+
+.clean-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #86198f;
+}

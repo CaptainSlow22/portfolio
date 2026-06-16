@@ -1,13 +1,7 @@
-'use client';
+"use client";
 import * as React from "react";
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import "react-photo-view/dist/react-photo-view.css";
+import Link from "next/link";
 
 const videos = [
   {
@@ -28,6 +22,29 @@ const videos = [
   },
 ];
 
+const photographyCategories = [
+  {
+    name: "Street Photography",
+    href: "/photography/street-photography",
+    url: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Behind the Scenes",
+    href: "/photography/behind-the-scenes",
+    url: "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Black and White",
+    href: "/photography/black-and-white",
+    url: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Nature and Landscapes",
+    href: "/photography/nature-and-landscapes",
+    url: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1200&auto=format&fit=crop",
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-svh overflow-x-hidden bg-yellow-200">
@@ -38,7 +55,7 @@ export default function Home() {
             Ariadna-Maria
           </h1>
           <h1 className="text-balance text-[clamp(2.5rem,11vw,4.5rem)] font-bold leading-[0.95] tracking-tight text-orange-500">
-            Dragoi
+            Drăgoi
           </h1>
 
           <span className="mt-4 block text-2xl text-pink-700 sm:text-3xl">
@@ -89,11 +106,11 @@ export default function Home() {
           </h2>
 
           <p className="text-base leading-relaxed text-pink-700 sm:text-lg">
-            I'm a video editor and creative technologist who loves crafting visual
-            stories. I work across editing, motion design, and interactive
-            experiences, blending technical skill with a strong sense of
-            storytelling. I enjoy collaborating on projects that challenge the
-            form and bring ideas to life through engaging visuals.
+            I'm a video editor and creative technologist who loves crafting
+            visual stories. I work across editing, motion design, and
+            interactive experiences, blending technical skill with a strong
+            sense of storytelling. I enjoy collaborating on projects that
+            challenge the form and bring ideas to life through engaging visuals.
           </p>
         </div>
       </section>
@@ -104,110 +121,64 @@ export default function Home() {
           My work
         </h2>
 
-        <Carousel
-  className="w-full px-10 sm:px-12"
-  opts={{
-    align: "start",
-    containScroll: "trimSnaps",
-    dragFree: false,
-    skipSnaps: false,
-    dragThreshold: 12,
-    loop: true,
-  }}
->
-  <CarouselContent className="-ml-4 will-change-transform">
-    {videos.map((video, index) => (
-      <CarouselItem
-        key={index}
-        className="basis-full pl-4 md:basis-1/2 xl:basis-1/3"
-      >
-        <VideoFrame video={video} />
+        <h3 className="mb-6 text-xl font-bold text-orange-500 sm:text-3xl">
+          Video Projects
+        </h3>
 
-        <p className="mt-3 text-sm font-light leading-relaxed text-pink-700">
-          {video.title}
-        </p>
-      </CarouselItem>
-    ))}
-  </CarouselContent>
+        <div className="clean-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4 [-webkit-overflow-scrolling:touch] sm:gap-6">
+          {videos.map((video, index) => (
+            <article
+              key={index}
+              className="w-[85vw] shrink-0 snap-start sm:w-[420px] md:w-[480px] lg:w-[520px]"
+            >
+              <div
+                className="aspect-video w-full overflow-hidden rounded-lg bg-black"
+                style={{ transform: "translateZ(0)" }}
+              >
+                <iframe
+                  src={video.embedUrl}
+                  title={video.title}
+                  loading="lazy"
+                  className="h-full w-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
 
-  <CarouselPrevious className="left-1 z-30 border-white/20 bg-fuchsia-900 text-white hover:bg-fuchsia-900 hover:text-white sm:left-0 md:-left-5" />
-  <CarouselNext className="right-1 z-30 border-white/20 bg-fuchsia-900 text-white hover:bg-fuchsia-900 hover:text-white sm:right-0 md:-right-5" />
-</Carousel>
+              <p className="mt-3 text-sm font-light leading-relaxed text-pink-700">
+                {video.title}
+              </p>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-16">
+          <h3 className="mb-6 text-xl font-bold text-orange-500 sm:text-3xl">
+            Photography Projects
+          </h3>
+
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+            {photographyCategories.map((category) => (
+              <Link
+                key={category.name}
+                href={category.href}
+                className="group relative flex aspect-[4/3] min-h-[120px] items-center justify-center overflow-hidden rounded-2xl px-4 text-center text-base text-white shadow-sm transition-transform duration-200 hover:scale-[1.02] sm:min-h-[150px] sm:text-xl"
+              >
+                <div
+                  className="absolute inset-0 scale-110 bg-cover bg-center blur-sm transition-transform duration-300 group-hover:scale-125"
+                  style={{
+                    backgroundImage: `url(${category.url})`,
+                  }}
+                />
+
+                <div className="absolute inset-0" />
+
+                <span className="relative z-10">{category.name}</span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
     </main>
-  );
-}
-
-function VideoFrame({ video }) {
-  const [interactive, setInteractive] = React.useState(false);
-  const startRef = React.useRef({ x: 0, y: 0 });
-  const movedRef = React.useRef(false);
-
-  const handlePointerDown = (event) => {
-    startRef.current = {
-      x: event.clientX,
-      y: event.clientY,
-    };
-
-    movedRef.current = false;
-  };
-
-  const handlePointerMove = (event) => {
-    const deltaX = Math.abs(event.clientX - startRef.current.x);
-    const deltaY = Math.abs(event.clientY - startRef.current.y);
-
-    if (deltaX > 10 || deltaY > 10) {
-      movedRef.current = true;
-    }
-  };
-
-  const handlePointerUp = () => {
-    if (!movedRef.current) {
-      setInteractive(true);
-    }
-  };
-
-  return (
-    <div
-      className="relative aspect-video w-full overflow-hidden rounded-lg bg-black"
-      style={{ transform: "translateZ(0)" }}
-    >
-      <iframe
-        src={video.embedUrl}
-        title={video.title}
-        loading="lazy"
-        className={`h-full w-full ${
-          interactive ? "" : "max-md:pointer-events-none"
-        }`}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      />
-
-      {!interactive && (
-        <button
-          type="button"
-          aria-label="Tap to activate video player"
-          className="absolute inset-0 z-10 hidden items-center justify-center bg-black/10 text-white max-md:flex"
-          onPointerDown={handlePointerDown}
-          onPointerMove={handlePointerMove}
-          onPointerUp={handlePointerUp}
-        >
-          <span className="rounded-full bg-black/70 px-4 py-2 text-xs font-light">
-            Tap to play · swipe to browse
-          </span>
-        </button>
-      )}
-
-      {interactive && (
-        <button
-          type="button"
-          className="absolute right-2 top-2 z-20 hidden rounded-full bg-black/70 px-3 py-1 text-xs font-light text-white max-md:block"
-          onClick={() => setInteractive(false)}
-          onPointerDownCapture={(event) => event.stopPropagation()}
-        >
-          Swipe
-        </button>
-      )}
-    </div>
   );
 }
