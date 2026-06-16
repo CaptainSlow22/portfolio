@@ -204,7 +204,7 @@ export default function Home() {
 }
 
 function openEmail() {
-  const email = "your.email@gmail.com";
+  const email = "ariadna.dragoi10@gmail.com";
   const subject = "Project Inquiry";
 
   const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
