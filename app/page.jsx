@@ -166,32 +166,29 @@ export default function Home() {
           Video Projects
         </h3>
 
-        <div className="clean-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-4 [-webkit-overflow-scrolling:touch] sm:gap-6">
-          {videos.map((video, index) => (
-            <article
-              key={index}
-              className="w-[85vw] shrink-0 snap-start sm:w-[420px] md:w-[480px] lg:w-[520px]"
-            >
-              <div
-                className="aspect-video w-full overflow-hidden rounded-lg bg-black"
-                style={{ transform: "translateZ(0)" }}
-              >
-                <iframe
-                  src={video.embedUrl}
-                  title={video.title}
-                  loading="lazy"
-                  className="h-full w-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
-              </div>
+        <div className="clean-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth pb-4 [-webkit-overflow-scrolling:touch] sm:gap-6">
+  {videos.map((video, index) => (
+    <article
+      key={index}
+      className="w-[92vw] max-w-[520px] shrink-0 snap-start sm:w-[420px] md:w-[480px] lg:w-[520px]"
+    >
+      <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-black">
+        <iframe
+          src={video.embedUrl}
+          title={video.title}
+          loading="lazy"
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          allowFullScreen
+          className="absolute inset-0 h-full w-full border-0"
+        />
+      </div>
 
-              <p className="mt-3 text-sm font-light leading-relaxed text-white">
-                {video.title}
-              </p>
-            </article>
-          ))}
-        </div>
+      <p className="mt-3 text-sm font-light leading-relaxed text-white">
+        {video.title}
+      </p>
+    </article>
+  ))}
+</div>
 
         <div className="mt-16">
           <h3 className="mb-6 text-xl font-bold text-white sm:text-3xl">
