@@ -3,6 +3,7 @@ import * as React from "react";
 import "react-photo-view/dist/react-photo-view.css";
 import Link from "next/link";
 import { IBM_Plex_Serif } from "next/font/google";
+import Image from "next/image";
 
 const ibmPlexSerif = IBM_Plex_Serif({
   subsets: ["latin"],
@@ -11,43 +12,67 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 const videos = [
   {
-    title: "'Peck Pocketed' by Kevin Herron | Disney Favorite",
-    embedUrl: "https://www.youtube.com/embed/IUN664s7N-c",
+    title: "Kommon Objects Advertisement",
+    embedUrl: "https://drive.google.com/file/d/1Hkexz-Cl0vePUSDb8vnIaZAWa1zo5c-9/preview",
   },
   {
-    title: "'Peck Pocketed' by Kevin Herron | Disney Favorite",
-    embedUrl: "https://www.youtube.com/embed/ttLu7ygaN6I",
+    title: "Cultural TV Show Promo Concept",
+    embedUrl: "https://drive.google.com/file/d/1LKcVdDYCvmECSD7I0Pjpbn1DhNX1bSwe/preview",
   },
   {
-    title: "UE5 | In The Heart Of The Forest by Anastasia Gorban",
-    embedUrl: "https://www.youtube.com/embed/C3vyugaBhSs",
+    title: "Clone Effect Short Film",
+    embedUrl: "https://drive.google.com/file/d/1YM-8Gbm5VOdGNNE-fNYaJu5DOJj61wU5/preview",
   },
   {
-    title: "Unreal Engine 5.0 Lighting / Misty Forest",
-    embedUrl: "https://www.youtube.com/embed/A-Jdm9CKDDs",
+    title: "Clip extracted from Aniversary Video #1",
+    embedUrl: "https://drive.google.com/file/d/1DbYuRcxkXmO0J4QgbmJoHQ9d25zpwBPW/preview",
   },
+  {
+    title: "Clip extracted from Aniversary Video #2",
+    embedUrl: "https://drive.google.com/file/d/1hw-is8YcFqhXs9S62Y-CmBSoBwAQIm0K/preview",
+  },
+  {
+    title: "Group Coffee & More Presentation Reel",
+    embedUrl: "https://drive.google.com/file/d/1SEpRgUEtT6ek53TmCHdiyXePQ_RnTQom/preview",
+  },
+  {
+    title: "Kommon Objects Reel #1",
+    embedUrl: "https://drive.google.com/file/d/150FKPjXg_ChIqIFcAlu1grHfNVrwudN2/preview",
+  },
+  {
+    title: "Kommon Objects Reel #2",
+    embedUrl: "https://drive.google.com/file/d/1NHZWypVOlqLdjOaJjyf7kcz8Zaxp7yyb/preview",
+  },
+  {
+    title: "The Casino's Promenade #1",
+    embedUrl: "https://drive.google.com/file/d/1MsizLbKLci0yp3GzRwPo17jFQOgedG6R/preview",
+  },
+  {
+    title: "The Casino's Promenade #2",
+    embedUrl: "https://drive.google.com/file/d/1-aH7Gw86EsxqOmb4pvEmbj_SO5dWGNzj/preview",
+  }
 ];
 
 const photographyCategories = [
   {
     name: "Street Photography",
     href: "/photography/street-photography",
-    url: "https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1200&auto=format&fit=crop",
+    url: "/images/street-photography/447f764f-9dc2-4432-83f3-10db87e2f53f.jpg",
   },
   {
     name: "Behind the Scenes",
     href: "/photography/behind-the-scenes",
-    url: "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop",
+    url: "/images/behind-the-scenes/23.JPEG",
   },
   {
     name: "Black and White",
     href: "/photography/black-and-white",
-    url: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
+    url: "/images/black-and-white/1a8aedde-f263-421f-bdae-b545e5659790.JPG",
   },
   {
     name: "Nature and Landscapes",
     href: "/photography/nature-and-landscapes",
-    url: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1200&auto=format&fit=crop",
+    url: "/images/nature-and-landscapes/IMG_0533.jpg",
   },
 ];
 
@@ -106,14 +131,13 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="h-[300px] w-full max-w-[520px] sm:h-[400px] lg:h-[520px] lg:w-1/2">
-          <iframe
-            src="https://my.spline.design/3dcircularcardscopycopy-3YbhIJp015BZDrF0UJ5Hn7Rp-BcT/"
-            frameBorder="0"
-            width="100%"
-            height="100%"
-            className="h-full w-full"
-            title="3D interactive cards"
+        <div className="relative h-[300px] w-full max-w-[520px] sm:h-[400px] lg:h-[520px] lg:w-1/2">
+          <Image
+            src="/images/camera.png"
+            alt="Camera"
+            fill
+            className="object-contain scale-[3]"
+            priority
           />
         </div>
       </section>
@@ -126,11 +150,7 @@ export default function Home() {
           </h2>
 
           <p className="text-lg leading-relaxed text-white sm:text-md">
-            I'm a video editor and creative technologist who loves crafting
-            visual stories. I work across editing, motion design, and
-            interactive experiences, blending technical skill with a strong
-            sense of storytelling. I enjoy collaborating on projects that
-            challenge the form and bring ideas to life through engaging visuals.
+            I'm a video editor and filmmaker with a Bachelor's degree in Cinematography and a background in film production. I work across filmmaking and editing, blending technical expertise with a strong sense of visual storytelling. Currently, I'm involved in a diverse range of projects, taking ideas from concept to completion by handling both filming and editing myself. I enjoy exploring new creative approaches, collaborating with others, and bringing stories to life through engaging and meaningful visuals.
           </p>
         </div>
       </section>

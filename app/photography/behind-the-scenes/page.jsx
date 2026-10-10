@@ -11,12 +11,23 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 
 const images = [
-  "https://images.unsplash.com/photo-1519501025264-65ba15a82390?q=80&w=1200&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=1200&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?q=80&w=1200&auto=format&fit=crop",
-  "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop",
+  '/images/behind-the-scenes/23.JPEG',
+  '/images/behind-the-scenes/bg.jpg',
+  '/images/behind-the-scenes/blue.JPEG',
+  '/images/behind-the-scenes/ce.jpg',
+  '/images/behind-the-scenes/h.jpg',
+  '/images/behind-the-scenes/IMG_5286.jpg',
+  '/images/behind-the-scenes/IMG_5340.jpg',
+  '/images/behind-the-scenes/IMG_5821.jpg',
+  '/images/behind-the-scenes/IMG_5845.jpg',
+  '/images/behind-the-scenes/IMG_6186.jpg',
+  '/images/behind-the-scenes/IMG_6526.jpg',
+  '/images/behind-the-scenes/IMG_7313.jpg',
+  '/images/behind-the-scenes/IMG_7680.jpg',
+  '/images/behind-the-scenes/IMG_7691.jpg',
+  '/images/behind-the-scenes/IMG_7699.jpg',
+  '/images/behind-the-scenes/IMG_7712.jpg',
+  '/images/behind-the-scenes/tal.JPEG'
 ];
 
 export default function BehindTheScenesPage() {
@@ -26,10 +37,6 @@ export default function BehindTheScenesPage() {
         <h1 className="text-4xl font-bold text-white sm:text-6xl">
           Behind the Scenes
         </h1>
-
-        <p className="mt-4 max-w-2xl text-base leading-relaxed text-white sm:text-lg">
-          Photography projects in the Behind the Scenes category.
-        </p>
 
         <PhotoProvider>
           <div className="mt-10 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-3 lg:grid-cols-4">
