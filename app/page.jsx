@@ -13,43 +13,43 @@ const ibmPlexSerif = IBM_Plex_Serif({
 const videos = [
   {
     title: "Kommon Objects Advertisement",
-    embedUrl: "https://drive.google.com/file/d/1Hkexz-Cl0vePUSDb8vnIaZAWa1zo5c-9/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/Dubla%2016%20ceas.mp4",
   },
   {
     title: "Cultural TV Show Promo Concept",
-    embedUrl: "https://drive.google.com/file/d/1LKcVdDYCvmECSD7I0Pjpbn1DhNX1bSwe/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/Fiecare%20artist%20are%20o%20poveste.mp4",
   },
   {
     title: "Clone Effect Short Film",
-    embedUrl: "https://drive.google.com/file/d/1YM-8Gbm5VOdGNNE-fNYaJu5DOJj61wU5/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/Proiect%20clonare.mp4",
   },
   {
     title: "Clip extracted from Aniversary Video #1",
-    embedUrl: "https://drive.google.com/file/d/1DbYuRcxkXmO0J4QgbmJoHQ9d25zpwBPW/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/sunset%20hour.mp4",
   },
   {
     title: "Clip extracted from Aniversary Video #2",
-    embedUrl: "https://drive.google.com/file/d/1hw-is8YcFqhXs9S62Y-CmBSoBwAQIm0K/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/angel.mp4",
   },
   {
     title: "Group Coffee & More Presentation Reel",
-    embedUrl: "https://drive.google.com/file/d/1SEpRgUEtT6ek53TmCHdiyXePQ_RnTQom/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/Clip%20de%20prezentare.mp4",
   },
   {
     title: "Kommon Objects Reel #1",
-    embedUrl: "https://drive.google.com/file/d/150FKPjXg_ChIqIFcAlu1grHfNVrwudN2/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/print%20ananas%20person.mp4",
   },
   {
     title: "Kommon Objects Reel #2",
-    embedUrl: "https://drive.google.com/file/d/1NHZWypVOlqLdjOaJjyf7kcz8Zaxp7yyb/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/sapca%20luata%20din%20cui.mp4",
   },
   {
     title: "The Casino's Promenade #1",
-    embedUrl: "https://drive.google.com/file/d/1MsizLbKLci0yp3GzRwPo17jFQOgedG6R/preview",
-  },
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/FALEZA%20CAZINO%20CONSTANTA.mp4",
+  },s
   {
     title: "The Casino's Promenade #2",
-    embedUrl: "https://drive.google.com/file/d/1-aH7Gw86EsxqOmb4pvEmbj_SO5dWGNzj/preview",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/FEMEIA%20CU%20PALARIE.mp4",
   }
 ];
 
