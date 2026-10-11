@@ -46,7 +46,7 @@ const videos = [
   {
     title: "The Casino's Promenade #1",
     embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/FALEZA%20CAZINO%20CONSTANTA.mp4",
-  },s
+  },
   {
     title: "The Casino's Promenade #2",
     embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/FEMEIA%20CU%20PALARIE.mp4",
