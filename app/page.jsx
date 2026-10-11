@@ -177,7 +177,7 @@ export default function Home() {
           src={video.embedUrl}
           title={video.title}
           loading="lazy"
-          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          allow="encrypted-media; picture-in-picture; fullscreen"
           allowFullScreen
           className="absolute inset-0 h-full w-full border-0"
         />
