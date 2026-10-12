@@ -24,11 +24,11 @@ const videos = [
     embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/Proiect%20clonare.mp4",
   },
   {
-    title: "Clip extracted from Aniversary Video #1",
+    title: "Clip extracted from Anniversary Video #1",
     embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/sunset%20hour.mp4",
   },
   {
-    title: "Clip extracted from Aniversary Video #2",
+    title: "Clip extracted from Anniversary Video #2",
     embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/angel.mp4",
   },
   {
@@ -70,9 +70,9 @@ const photographyCategories = [
     url: "/images/black-and-white/1a8aedde-f263-421f-bdae-b545e5659790.JPG",
   },
   {
-    name: "Nature and Landscapes",
-    href: "/photography/nature-and-landscapes",
-    url: "/images/nature-and-landscapes/IMG_0533.jpg",
+    name: "Nature and Landscape",
+    href: "/photography/nature-and-landscape",
+    url: "/images/nature-and-landscape/IMG_0533.jpg",
   },
 ];
 
@@ -92,7 +92,7 @@ export default function Home() {
           </h1>
 
           <span className="mt-4 block text-2xl text-white sm:text-3xl">
-            Video Editor
+            Videographer
           </span>
 
           <div className="relative z-20 mt-6 flex items-center justify-center gap-4 lg:justify-start">
@@ -159,7 +159,7 @@ export default function Home() {
       {/* Work */}
       <section className="mx-auto w-full max-w-7xl px-5 py-12 sm:px-8 md:px-12 lg:px-16">
         <h2 className="mb-8 text-3xl font-bold text-white sm:text-5xl">
-          My work
+          My most recent work
         </h2>
 
         <h3 className="mb-6 text-xl font-bold text-white sm:text-3xl">

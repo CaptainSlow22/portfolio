@@ -21,7 +21,6 @@ const images = [
   '/images/behind-the-scenes/IMG_5821.jpg',
   '/images/behind-the-scenes/IMG_5845.jpg',
   '/images/behind-the-scenes/IMG_6186.jpg',
-  '/images/behind-the-scenes/IMG_6526.jpg',
   '/images/behind-the-scenes/IMG_7313.jpg',
   '/images/behind-the-scenes/IMG_7680.jpg',
   '/images/behind-the-scenes/IMG_7691.jpg',

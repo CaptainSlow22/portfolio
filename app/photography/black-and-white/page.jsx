@@ -11,6 +11,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 const images = [
   '/images/black-and-white/1a8aedde-f263-421f-bdae-b545e5659790.JPG',
+  '/images/black-and-white/IMG_6526.jpg',
   '/images/black-and-white/IMG_1287.jpg',
   '/images/black-and-white/IMG_4004.jpg',
   '/images/black-and-white/IMG_4789.jpg',

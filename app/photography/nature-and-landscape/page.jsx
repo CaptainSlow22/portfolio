@@ -10,22 +10,22 @@ const ibmPlexSerif = IBM_Plex_Serif({
 });
 
 const images = [
-  '/images/nature-and-landscapes/IMG_0533.jpg',
-  '/images/nature-and-landscapes/IMG_0545.jpg',
-  '/images/nature-and-landscapes/IMG_0857.jpg',
-  '/images/nature-and-landscapes/IMG_1490.jpg',
-  '/images/nature-and-landscapes/IMG_5069.JPG',
-  '/images/nature-and-landscapes/IMG_5072.JPG',
-  '/images/nature-and-landscapes/IMG_5074.JPG',
-  '/images/nature-and-landscapes/IMG_8686.JPG'
+  '/images/nature-and-landscape/IMG_0533.jpg',
+  '/images/nature-and-landscape/IMG_0545.jpg',
+  '/images/nature-and-landscape/IMG_0857.jpg',
+  '/images/nature-and-landscape/IMG_1490.jpg',
+  '/images/nature-and-landscape/IMG_5069.JPG',
+  '/images/nature-and-landscape/IMG_5072.JPG',
+  '/images/nature-and-landscape/IMG_5074.JPG',
+  '/images/nature-and-landscape/IMG_8686.JPG'
 ];
 
-export default function NatureAndLandscapesPage() {
+export default function NatureAndLandscapePage() {
   return (
     <main className={`${ibmPlexSerif.className} min-h-svh bg-emerald-800 px-5 py-16 sm:px-8 md:px-12 lg:px-16`}>
       <section className="mx-auto w-full max-w-7xl">
         <h1 className="text-4xl font-bold text-white sm:text-6xl">
-          Nature and Landscapes
+          Nature and Landscape
         </h1>
 
         <PhotoProvider>
