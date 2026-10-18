@@ -36,6 +36,10 @@ const videos = [
     embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/Clip%20de%20prezentare.mp4",
   },
   {
+    title: "Efectiv Sepci Reel",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/Efectiv%20Sepci%20edit.mp4",
+  },
+  {
     title: "Kommon Objects Reel #1",
     embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/print%20ananas%20person.mp4",
   },
