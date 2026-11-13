@@ -22,7 +22,9 @@ const images = [
   '/images/street-photography/IMG_4488.PNG',
   '/images/street-photography/IMG_4985.jpg',
   '/images/street-photography/IMG_5323.jpg',
-  '/images/street-photography/IMG_5350.jpg'
+  '/images/street-photography/IMG_5350.jpg',
+  '/images/street-photography/WhatsApp Image 2026-11-13 at 12.20.45.jpeg',
+  '/images/street-photography/WhatsApp Image 2026-11-13 at 12.20.46.jpeg'
 ];
 
 export default function StreetPhotographyPage() {

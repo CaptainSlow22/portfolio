@@ -12,6 +12,10 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 const videos = [
   {
+    title: "Photoshoot Reel #1",
+    embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/photoshoot_reel_1.mp4",
+  },
+  {
     title: "Kommon Objects Advertisement",
     embedUrl: "https://pub-b5d9d26f3fa74035b3467ab52da5e12d.r2.dev/Dubla%2016%20ceas.mp4",
   },

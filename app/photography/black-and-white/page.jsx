@@ -18,7 +18,7 @@ const images = [
   '/images/black-and-white/IMG_4869.jpg',
   '/images/black-and-white/IMG_7819.jpg',
   '/images/black-and-white/IMG_8544.JPG',
-  
+  '/images/black-and-white/WhatsApp Image 2026-11-13 at 12.20.42.jpeg'
 ];
 
 export default function BlackAndWhitePage() {

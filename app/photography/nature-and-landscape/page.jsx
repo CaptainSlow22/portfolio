@@ -17,7 +17,8 @@ const images = [
   '/images/nature-and-landscape/IMG_5069.JPG',
   '/images/nature-and-landscape/IMG_5072.JPG',
   '/images/nature-and-landscape/IMG_5074.JPG',
-  '/images/nature-and-landscape/IMG_8686.JPG'
+  '/images/nature-and-landscape/IMG_8686.JPG',
+  '/images/nature-and-landscape/WhatsApp Image 2026-11-13 at 12.20.44.jpeg'
 ];
 
 export default function NatureAndLandscapePage() {
